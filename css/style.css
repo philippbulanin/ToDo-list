@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+.wrap {
+    padding: 10px;
+    width: 800px;
+    border: 5px solid black;
+    border-radius: 6px;
+    margin: 0 auto;
+}
+.header {
+    text-align: center;
+}
+.notes {
+    position: relative;
+    padding: 5px;
+    padding: 0px 30px 30px 20px;
+    min-height: 100px;
+    border: 3px solid black;
+    margin: 5px auto;
+}
+.notes-text {
+    text-align: justify;
+}
+.notes-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    margin: auto 0;
+    width: 16px;
+    height: 16px;
+    background-image: url("http://www.picshare.ru/uploads/181222/em9anWH29p.png");
+    cursor: pointer;
+    transition: 0.5s;
+}
+.notes-close:hover {
+    background-image: url("http://www.picshare.ru/uploads/181222/C6C6sr7hK9.png");
+    transition: 0.5s;
+}
+.notes-done {
+    position: absolute;
+    display: flex;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+}
+.done {
+    color: silver;
+    font-style: italic;
+    text-decoration: line-through;
+}
+.notes-done_text {
+    position: absolute;
+    display: block;
+    right: -2px;
+    bottom: -5px;
+    cursor: pointer;
+}
+.notes-done_checkbox {
+    display: none;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.edit {
+    //height: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    padding: 30px;
+    padding-bottom: 0;
+}
+.edit-delete {
+    display: flex;
+    padding: 5px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.edit-delete_completed, .edit-delete_all {
+    border: none;
+    border-radius: 5px;
+    background: none;
+    color: grey;
+    height: 30px;
+    width: 120px;
+    margin: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    outline: none;
+}
+.edit-delete_completed:hover, .edit-delete_all:hover {
+    background: #e1e1e1;
+    transition: 0.5s;
+}
+.edit-text {
+    border: none;
+    border-bottom: 2px solid silver;
+    margin-top: 10px;
+    width: 600px;
+    height: 25px;
+    resize: none;
+    outline: none;
+}
+.edit-btn {
+    margin-left: 10px;
+    border-radius: 5px;
+    outline: none;
+    background: black;
+    color: white;
+    border: none;
+    width: 70px;
+    height: 50px;
+}
+
